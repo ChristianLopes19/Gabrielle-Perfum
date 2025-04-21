@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .letters {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .per {
+    margin-bottom: 20px;
+    letter-spacing: 7px;
+    color: gray;
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+  }
+  
+  h4 {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 300px;
+  }
+  
+  .pricess {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .price {
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+  }
+  
+  .desconto {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  button.btn {
+    border: none;
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    font-size: 18px;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    background-color: darkgreen;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) inset;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img {
+      max-width: 100%;
+      border-radius: 20px 20px 0 0;
+    }
+  
+    .letters {
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    h4 {
+      max-width: 100%;
+    }
+  
+    .pricess {
+      justify-content: center;
+    }
+  }
+  
